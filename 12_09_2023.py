@@ -7,7 +7,7 @@ def decorate_as_string(func):
     return wrapper
 
 @decorate_as_string
-def subtract(number1: float, number2: float) -> int:
+def subtract(number1: int, number2: int) -> int:
     return number1 - number2
 
 
