@@ -11,4 +11,4 @@ def subtract(number1: int, number2: int) -> int:
 
 
 print(subtract(10,number2=24))
-# print(type(subtract(10,24)))
+print(type(subtract(10,24)))
