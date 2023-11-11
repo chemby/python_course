@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="p-4">
+    <h1 class="fw-bolder text-light">{{ title }}</h1>
+
+
+  <form class="col-6" method="post" action="/add">
+    <div class="mb-3">
+      <label class="text-light fw-bold mb-3" for="title" class="form-label">Your story title:</label>
+      <input type="text"  name="title" class="form-control" id="title" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="text-light fw-bold mb-3" for="username" class="form-label">Your username:</label>
+      <input type="text"  name="username" class="form-control" id="username">
+    </div>
+
+    <div class="mb-3">
+      <label class="text-light fw-bold mb-3" for="content" class="form-label">Tell us about what happened:</label>
+      <input type="text"  name="content" class="form-control" id="content" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Story</button>
+  </form>
+</div>
+
+{% endblock %}
